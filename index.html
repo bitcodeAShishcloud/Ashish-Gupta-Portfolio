@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Gupta - Cybersecurity Student & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <meta name="description" content="Ashish Gupta - Cybersecurity Student & Developer specializing in ethical hacking, network security, and digital forensics. Currently pursuing B.Tech in Cyber Security at NIET Greater Noida.">
+</head>
+<body>
+    <!-- Particles.js Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AG</span>
+                <div class="logo-glow"></div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg class="hero-icon" viewBox="0 0 512 512" width="16" height="16">
+                    <path fill="currentColor" d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"/>
+                </svg>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="name-primary">Ashish</span>
+                <span class="name-secondary">Gupta</span>
+            </h1>
+            <h2 class="hero-subtitle">Cybersecurity Student & Developer</h2>
+            <p class="hero-description">B.Tech CSE (Cyber Security) | NIET Greater Noida</p>
+            <div class="typing-container">
+                <span class="typing-prefix">I am a</span>
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn--primary floating-btn">
+                    <svg class="btn-icon" viewBox="0 0 512 512" width="16" height="16">
+                        <path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54.2 17.1-77 0L0 176z"/>
+                    </svg>
+                    <span>Get In Touch</span>
+                </a>
+                <a href="#" onclick="downloadResume(); return false;" class="btn btn--secondary floating-btn">
+                    <svg class="btn-icon" viewBox="0 0 512 512" width="16" height="16">
+                        <path fill="currentColor" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+                    </svg>
+                    <span>Download Resume</span>
+                </a>
+                <a href="#projects" class="btn btn--outline floating-btn">
+                    <svg class="btn-icon" viewBox="0 0 640 512" width="16" height="16">
+                        <path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                    </svg>
+                    <span>View Projects</span>
+                </a>
+                <a href="#contact" class="btn btn--hire floating-btn">
+                    <i class="fas fa-handshake"> </i>
+                    <span>Hire Me</span>
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ashish-gupta-037973259/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" title="LinkedIn">
+                    <svg class="social-icon" viewBox="0 0 448 512" width="20" height="20">
+                        <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                    <div class="social-ripple"></div>
+                </a>
+                <a href="https://github.com/bitcodeAShishcloud" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" title="GitHub">
+                    <svg class="social-icon" viewBox="0 0 496 512" width="20" height="20">
+                        <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                    <div class="social-ripple"></div>
+                </a>
+                <a href="mailto:agupta38160@gmail.com" class="social-link" data-tooltip="Email" title="Email">
+                    <i class="fas fa-envelope"></i>
+                    <div class="social-ripple"></div>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                About Me
+                <div class="title-decoration"></div>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="profile-image-container">
+                        <div class="profile-image glass">
+                            <i class="fas fa-user-shield"></i>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <p class="about-description">
+                        A dedicated 2nd-year Cyber Security student at NIET, Greater Noida, with a deep passion for protecting digital assets and understanding the intricacies of cyber threats. My journey in cyber security is driven by curiosity and a commitment to making the digital world safer. I specialize in network defense, ethical hacking, and digital forensics, constantly expanding my knowledge through hands-on projects and practical learning. With experience in Python and C++, I combine programming skills with security expertise to build comprehensive solutions.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>NIET, Greater Noida</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Programming</h4>
+                                <p>Python, C++</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Focus</h4>
+                                <p>Cyber Security</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stats-grid">
+                        <div class="stat-item glass" data-target="2" data-suffix="+">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Years of Learning</span>
+                        </div>
+                        <div class="stat-item glass" data-target="2" data-suffix="">
+                            <div class="stat-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Internship Projects</span>
+                        </div>
+                        <div class="stat-item glass" data-target="10" data-suffix="+">
+                            <div class="stat-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Skills Mastered</span>
+                        </div>
+                        <div class="stat-item glass" data-target="1" data-suffix="" data-text="Available">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span class="stat-number">Available</span>
+                            <span class="stat-label">for Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                Professional Experience
+                <div class="title-decoration"></div>
+            </h2>
+            <div class="experience-timeline">
+                <div class="timeline-line"></div>
+                <div class="experience-item glass" data-aos="fade-up">
+                    <div class="timeline-dot">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Cybersecurity Intern</h3>
+                            <span class="company">Prodigy InfoTech</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <p class="experience-description">
+                            Completed cybersecurity tasks including security analysis, vulnerability assessment, and threat detection projects. Gained hands-on experience with security tools and methodologies.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Security Analysis</span>
+                            <span class="tech-tag">Vulnerability Assessment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item glass" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Python Developer Intern</h3>
+                            <span class="company">CodSoft</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <p class="experience-description">
+                            Developed various Python applications demonstrating programming proficiency and problem-solving skills. Created desktop applications and worked on automation projects.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Desktop Applications</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                Skills & Expertise
+                <div class="title-decoration"></div>
+            </h2>
+            <div class="skills-container">
+                <div class="skills-category glass">
+                    <div class="category-header">
+                        <i class="fas fa-shield-virus"></i>
+                        <h3>Cybersecurity Expertise</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Network Security</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Network monitoring, firewall configuration, and intrusion detection</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Ethical Hacking</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Security testing and vulnerability identification</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Penetration Testing</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Vulnerability assessment and ethical hacking methodologies</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Threat Analysis</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Cyber threat intelligence and risk assessment</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Digital Forensics</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Evidence collection and analysis for cyber investigations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category glass">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Security automation, scripting, and application development</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Wireshark</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Network protocol analysis and traffic monitoring</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Kali Linux</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Penetration testing and security auditing platform</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">System programming and performance-critical applications</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Metasploit</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <p class="skill-description">Exploitation framework and vulnerability testing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                Featured Projects
+                <div class="title-decoration"></div>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card glass featured-project" data-aos="zoom-in">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-image">
+                        <i class="fab fa-python"></i>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bitcodeAShishcloud/Poppit-Ai" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/bitcodeAShishcloud/Poppit-Ai" class="project-link" title="Repo Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Poppit-Ai</h3>
+                        <p class="project-description">
+                            AI-focused project with recent development activity on GitHub; includes Python code, model experiments, and fine-tuning workflows for interactive AI tasks.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">Python</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Fine-tuning</span>
+                        </div>
+                        <div class="project-category">AI / Fine-tuning</div>
+                    </div>
+                </div>
+
+                <div class="project-card glass" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Prodigy InfoTech Cyber Tasks</h3>
+                        <p class="project-description">
+                            Collection of cybersecurity tasks completed during internship at Prodigy InfoTech, including security analysis, vulnerability assessment, and threat detection projects.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">Python</span>
+                            <span class="tech-tag">Cyber Security</span>
+                            <span class="tech-tag">Internship</span>
+                        </div>
+                        <div class="project-category">Cybersecurity</div>
+                    </div>
+                </div>
+
+                <div class="project-card glass" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <i class="fab fa-python"></i>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CodSoft Repository Tasks</h3>
+                        <p class="project-description">
+                            Task bundle completed during Python internship at CodSoft, demonstrating programming proficiency and problem-solving skills across various Python applications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">Python</span>
+                            <span class="tech-tag">Development</span>
+                            <span class="tech-tag">Internship</span>
+                        </div>
+                        <div class="project-category">Development</div>
+                    </div>
+                </div>
+
+                <div class="project-card glass" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <i class="fas fa-network-wired"></i>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Security Scanner</h3>
+                        <p class="project-description">
+                            Advanced network vulnerability scanner for comprehensive security assessment and penetration testing with detailed reporting capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">Python</span>
+                            <span class="tech-tag">Nmap</span>
+                            <span class="tech-tag">Network Security</span>
+                        </div>
+                        <div class="project-category">Security Tool</div>
+                    </div>
+                </div>
+                
+                <!-- GitHub-linked projects (added) -->
+                <div class="project-card glass" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <i class="fas fa-folder-open"></i>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bitcodeAShishcloud/Ashish-Gupta-Portfolio" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/bitcodeAShishcloud/Ashish-Gupta-Portfolio" class="project-link" title="Repo Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ashish-Gupta-Portfolio</h3>
+                        <p class="project-description">Modern cyber security portfolio showcasing 3D animations, glass morphism, and responsive design — linked to the project's GitHub repository.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-category">Web Portfolio</div>
+                    </div>
+                </div>
+
+                <div class="project-card glass" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="project-image">
+                        <i class="fas fa-university"></i>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bitcodeAShishcloud/banking-shopping-system" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Banking Shopping System</h3>
+                        <p class="project-description">
+                            A comprehensive banking and shopping desktop application built with Python, featuring secure transaction processing, user authentication, and inventory management. Modern, secure, and feature-rich platform combining personal banking and e-commerce.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">Python</span>
+                            <span class="tech-tag">Desktop App</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                        <div class="project-category">Desktop Application</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05</span>
+                Education & Certifications
+                <div class="title-decoration"></div>
+            </h2>
+            <div class="education-content">
+                <div class="education-card glass" data-aos="fade-right">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelor's in Cyber Security</h3>
+                        <p class="institution">NIET, Greater Noida</p>
+                        <p class="duration">2024 - 2028 (2nd Year)</p>
+                        <p class="education-description">
+                            Currently pursuing a comprehensive degree in Cyber Security with focus on network security, ethical hacking, digital forensics, and cyber threat analysis. Actively participating in security workshops and practical labs.
+                        </p>
+                        <div class="coursework">
+                            <h4>Relevant Coursework:</h4>
+                            <div class="course-tags">
+                                <span class="course-tag">Network Security</span>
+                                <span class="course-tag">Cryptography</span>
+                                <span class="course-tag">Digital Forensics</span>
+                                <span class="course-tag">Ethical Hacking</span>
+                                <span class="course-tag">Cyber Law</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-section glass" data-aos="fade-left">
+                    <div class="cert-header">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Upcoming Certifications</h3>
+                    </div>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>CompTIA Security+ Certification</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-user-secret"></i>
+                            <span>Certified Ethical Hacker (CEH)</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-school"></i>
+                            <span>NIET Security Workshops & Seminars</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Cybersecurity CTF Competitions</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-industry"></i>
+                            <span>Industry Training Programs</span>
+                        </div>
+                    </div>
+                    <p class="cert-commitment">
+                        I'm committed to continuous learning and professional development in the cybersecurity field.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06</span>
+                Get In Touch
+                <div class="title-decoration"></div>
+            </h2>
+            
+            <!-- Contact Introduction Banner -->
+            <div class="contact-intro glass">
+                <div class="intro-content">
+                    <div class="intro-icon">
+                        <i class="fas fa-shield-halved"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="intro-text">
+                        <h3>Let's Secure the Digital Future Together</h3>
+                        <p>I'm passionate about cybersecurity and always excited to connect with fellow professionals, discuss innovative security solutions, and explore collaboration opportunities.</p>
+                        <div class="intro-badges">
+                            <span class="badge"><i class="fas fa-clock"></i> Quick Response</span>
+                            <span class="badge"><i class="fas fa-shield-check"></i> Secure Channel</span>
+                            <span class="badge"><i class="fas fa-handshake"></i> Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info glass" data-aos="fade-right">
+                    <div class="contact-header">
+                        <div class="header-icon">
+                            <i class="fas fa-address-card"></i>
+                        </div>
+                        <div class="header-text">
+                            <h3>Contact Information</h3>
+                            <p>Multiple ways to reach out and connect with me professionally.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item" data-hover="email">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                                <div class="icon-bg"></div>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Primary Email</span>
+                                <span class="value">agupta38160@gmail.com</span>
+                                <span class="description">Professional inquiries and collaborations</span>
+                            </div>
+                            <a href="mailto:agupta38160@gmail.com" class="contact-action" title="Send Email">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item" data-hover="linkedin">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                                <div class="icon-bg"></div>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">LinkedIn Profile</span>
+                                <span class="value">Ashish Gupta - Cybersecurity</span>
+                                <span class="description">Professional networking and updates</span>
+                            </div>
+                            <a href="https://www.linkedin.com/in/ashish-gupta-037973259/" target="_blank" rel="noopener noreferrer" class="contact-action" title="Visit LinkedIn Profile">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item" data-hover="github">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                                <div class="icon-bg"></div>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">GitHub Repository</span>
+                                <span class="value">bitcodeAShishcloud</span>
+                                <span class="description">Open source projects and code samples</span>
+                            </div>
+                            <a href="https://github.com/bitcodeAShishcloud" target="_blank" rel="noopener noreferrer" class="contact-action" title="Visit GitHub Profile">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item" data-hover="whatsapp">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="icon-bg"></div>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">WhatsApp</span>
+                                <span class="value">WhatsApp</span>
+                                <span class="description">Quick chat and instant messaging</span>
+                            </div>
+                            <a href="https://wa.me/918303511792?text=Hi%20Ashish!%20👋%20I%20came%20across%20your%20amazing%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%20Let%27s%20discuss%20potential%20opportunities!%20✨" target="_blank" rel="noopener noreferrer" class="contact-action" title="Start WhatsApp Chat">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item" data-hover="location">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="icon-bg"></div>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Current Location</span>
+                                <span class="value">Greater Noida, India</span>
+                                <span class="description">UTC +5:30 • Open to remote work</span>
+                            </div>
+                            <div class="timezone-indicator">
+                                <i class="fas fa-globe"></i>
+                                <span id="local-time">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-status">
+                        <div class="status-indicator pulsing"></div>
+                        <div class="status-content">
+                            <span class="status-text">Available for Opportunities</span>
+                            <span class="status-detail">Currently seeking cybersecurity internships and project collaborations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form glass" id="contact-form" data-aos="fade-left">
+                    <div class="form-header">
+                        <div class="form-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="form-title">
+                            <h3>Send Message</h3>
+                            <p>Have a project or opportunity? Let's discuss it! I typically respond within 24 hours.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <i class="fas fa-user"></i>
+                                Full Name
+                            </label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your full name">
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i>
+                                Email Address
+                            </label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="your.email@example.com">
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group subject-group">
+                        <label for="subject" class="form-label subject-label">
+                            <i class="fas fa-tag"></i>
+                            <span class="label-text">Subject</span>
+                            <span class="required-indicator">*</span>
+                        </label>
+                        <div class="subject-wrapper">
+                            <select id="subject" name="subject" class="form-control subject-select" required>
+                                <option value="" disabled selected>🎯 Select your inquiry type...</option>
+                                <option value="🎓 Internship Opportunity">🎓 Internship Opportunity</option>
+                                <option value="� Job Opportunity">💼 Job Opportunity</option>
+                                <option value="�🔐 Cybersecurity Project">🔐 Cybersecurity Project</option>
+                                <option value="🤝 Collaboration Proposal">🤝 Collaboration Proposal</option>
+                                <option value="👨‍🏫 Mentorship & Guidance">👨‍🏫 Mentorship & Guidance</option>
+                                <option value="🌐 Professional Networking">🌐 Professional Networking</option>
+                                <option value="📚 Academic Project">📚 Academic Project</option>
+                                <option value="💻 Technical Discussion">💻 Technical Discussion</option>
+                                <option value="🔧 Freelance Work">🔧 Freelance Work</option>
+                                <option value="🎤 Speaking Engagement">🎤 Speaking Engagement</option>
+                                <option value="📧 General Inquiry">📧 General Inquiry</option>
+                                <option value="❓ Other">❓ Other</option>
+                            </select>
+                            <div class="subject-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="input-line"></div>
+                        <div class="subject-hint">Please select the most relevant topic for faster response</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            <i class="fas fa-comment-dots"></i>
+                            Your Message
+                        </label>
+                        <textarea id="message" name="message" class="form-control" rows="6" required 
+                                  placeholder="Tell me about your project, opportunity, or inquiry. The more details you provide, the better I can assist you..."
+                                  maxlength="1000"></textarea>
+                        <div class="input-line"></div>
+                        <div class="char-counter">
+                            <span id="char-count">0</span>/1000 characters
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width btn--enhanced">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    
+                    <div id="form-message" class="form-message hidden"></div>
+                    
+                    <div class="form-footer">
+                        <div class="security-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your information is encrypted and secure</span>
+                        </div>
+                        <div class="response-time">
+                            <i class="fas fa-clock"></i>
+                            <span>Typical response: 24 hours</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Quick Action Cards -->
+            <div class="quick-actions">
+                <h3 class="quick-actions-title">
+                    <i class="fas fa-bolt"></i>
+                    Quick Actions
+                </h3>
+                <div class="action-cards">
+                    <div class="action-card glass" onclick="openLinkedIn()">
+                        <div class="card-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Connect on LinkedIn</h4>
+                            <p>Professional networking</p>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card glass" onclick="openGitHub()">
+                        <div class="card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>View GitHub</h4>
+                            <p>Browse my projects</p>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card glass" onclick="downloadResume()">
+                        <div class="card-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Download CV</h4>
+                            <p>Get my resume PDF</p>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card glass" onclick="viewResume()">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>View Resume</h4>
+                            <p>Preview online</p>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card glass" onclick="sendEmail()">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Send Email</h4>
+                            <p>Direct contact</p>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">AG</span>
+                    </div>
+                    <p>&copy; 2025 Ashish Gupta. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/ashish-gupta-037973259/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/bitcodeAShishcloud" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:agupta38160@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
